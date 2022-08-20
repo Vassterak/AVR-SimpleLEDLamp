@@ -13,7 +13,7 @@ Check out: [Schematic](/docs/schematics/main.pdf)
 
 - [Charging board](https://oshwlab.com/Little_Arc/TP4056) You can buy it everywhere, Amazon, Aliexpress... etc. Now with USB C also. **I did a small modification to mine, set the charging current to 580mA instead of 1000mA. (To prevent chip overheating and when using bad input charger) Visible in schematic 2kΩ resistor instead of 1,2kΩ IC TP4056, PIN 2(PROG)**
 - [Boost Converter board](https://oshwlab.com/Little_Arc/MT3608) **For stable operation and limit the voltage ripple from switching. It's recommended to use smoothing capacitator, I set my boost converter to 4,6V because higher voltage will result only in higher power losses.**
-- [My own ATtiny85 boar](/docs/images/ATtiny85%20board.jpg), [ATtiny85 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf)
+- [My own ATtiny85 board](/docs/images/ATtiny85%20board.jpg), [ATtiny85 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf)
 - 2x 18650 accumulators (You can use what ever type of Lion/LiPo **1S only!**)
 - 3D printed case. You will need to design your own because of different shape for crystal (or what ever you want to use).
 
@@ -31,6 +31,8 @@ Check out: [Schematic](/docs/schematics/main.pdf)
 ## Result
 <p align="center">
   <img src="/docs/images/LEDLamp.gif" alt="video of finished project">
+  <img src="/docs/images/finished1.jpg" style="width: 30%;" alt="image 1 of finished project">
+    <img src="/docs/images/finished2.jpg" style="width: 30%;" alt="image 2 of finished project">
 </p>
 
 
