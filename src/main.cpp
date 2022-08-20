@@ -9,7 +9,6 @@
 #define VOTLAGE_READ A3
 
 //Constants
-//#define F_CPU 8000000UL //8MHz
 #define RAINBOW_SPEED 128 // 65 536 / 128 = 512 steps. 62steps per second = 512/62 = 8seconds (rounded) lasting one loop of animation
 #define NUMPIXELS 1
 #define HOLD_TIME 1000 //in ms
@@ -44,13 +43,6 @@ void read_from_eeprom()
 ISR (TIMER1_OVF_vect)
 {
   rainbowHue += RAINBOW_SPEED;
-
-  /*
-  if (analogRead(VOTLAGE_READ) > 950 )
-    PORTB |= 0x1;
-  else
-    PORTB &= !0x1;
-  */
 
   if (helpVarDelay > BLINKING_SPEED)
   {
@@ -225,9 +217,6 @@ void setup()
   pinMode(CHANGE_BUTTON_UP, INPUT_PULLUP);
   pinMode(CHANGE_BUTTON_PIN_DOWN, INPUT_PULLUP);
   pixels.begin();
-
-  //pinMode(PB0, OUTPUT);
-  //pinMode(VOTLAGE_READ, INPUT);
 }
 
 void loop()
@@ -236,9 +225,4 @@ void loop()
   button_state_check2();
   select_effect();
   pixels.show();
-  /*
-  PORTB = PORTB | 0b00000001;
-  delayMicroseconds(500);
-  PORTB = PORTB & !0b00000001;
-  delayMicroseconds(500);*/
 }
