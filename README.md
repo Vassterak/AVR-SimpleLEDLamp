@@ -27,7 +27,12 @@ Check out: [Schematic](/docs/schematics/main.pdf)
 5. Check if you have all required libraries
 ![PlatfromIO Image3](https://github.com/Vassterak/ESP32-LEDControl/blob/main/docs/media/installation/install3.JPG)
 
+6. How to upload new code to ATtiny85? Use other Arduino in ISP mode. [Tutorial.](https://www.instructables.com/How-to-Program-an-Attiny85-From-an-Arduino-Uno/)
 ## Result
+<p align="center">
+  <img src="/docs/images/LEDLamp.gif" alt="video of finished project">
+</p>
+
 
 ## License
 [License](/LICENSE)
